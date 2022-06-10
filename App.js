@@ -1,13 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Image, View, Text, SafeAreaView, Pressable } from 'react-native';
+import { StyleSheet, Image, View, Text, SafeAreaView, Pressable,Linking } from 'react-native';
 
 const colorGithub = '#010409';
 const colorFontGithug = '#C9D1D9';
-const colorDarkFontGitHub = '#4F565E'
+const colorDarkFontGitHub = '#4F565E';
+const URL_GITHUB = 'https://github.com/GuilhermeCostaDF';
 const imageProfileGitHub = 'https://avatars.githubusercontent.com/u/74997292?v=4';
 
 export default function App() {
-  
+
+  const handlePressGoToGitHub = async () => {
+    const res = await Linking.canOpenURL(URL_GITHUB);
+
+    if(res) {
+      await Linking.openURL(URL_GITHUB);
+    }
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content} >
@@ -28,7 +37,7 @@ export default function App() {
           style={[styles.defaultText, styles.description]}>
           Graduando em Tecnologia em Sistemas para a Internet - IFB 🧑‍🎓
         </Text>
-        <Pressable onPress={() => console.log('clicou')}>
+        <Pressable onPress={handlePressGoToGitHub}>
           <View style={styles.button}>
             <Text style={[styles.defaultText, styles.textButton]}> Open in GitHub </Text>
           </View>

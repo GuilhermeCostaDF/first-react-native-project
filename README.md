@@ -1,4 +1,4 @@
-![WhatsApp Image 2022-06-09 at 22.59.18](C:\Users\chile\Downloads\WhatsApp Image 2022-06-09 at 22.59.18.jpeg)
+![WhatsApp Image 2022-06-09 at 22.59.18](https://uploaddeimagens.com.br/imagens/QVvqO0c)
 
 # Conteúdo
 

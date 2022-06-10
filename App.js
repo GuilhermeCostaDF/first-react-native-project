@@ -1,5 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Image, View, Text, SafeAreaView, Pressable,Linking } from 'react-native';
+import { 
+  StyleSheet, 
+  Image, 
+  View, 
+  Text, 
+  SafeAreaView, 
+  Pressable,
+  Linking } from 'react-native';
 
 const colorGithub = '#010409';
 const colorFontGithug = '#C9D1D9';
@@ -21,20 +28,14 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <View style={styles.content} >
         <Image style={styles.avatar} source={{ uri: imageProfileGitHub }} accessibilityLabel='Imagem de perfil do Guilherme Costa' />
-        <StatusBar backgroundColor={colorGithub} barStyle='light-content' />  {/*Serve para manipular a barra de notificações*/}
-        <Text
-          accessibilityLabel='Nome: Guilherme Costa'
-          style={[styles.defaultText, styles.name]}>
+        <StatusBar backgroundColor={colorGithub} barStyle='light-content' />  
+        <Text accessibilityLabel='Nome: Guilherme Costa' style={[styles.defaultText, styles.name]} >
           Guilherme Costa
         </Text>
-        <Text
-          accessibilityLabel='Nicknam: GuidoCostaDF'
-          style={[styles.defaultText, styles.nickname]}>
+        <Text accessibilityLabel='Nickname: GuidoCostaDF' style={[styles.defaultText, styles.nickname]} >
           GuilhermeCostaDF
         </Text>
-        <Text
-          accessibilityLabel='Graduando em Tecnologia em Sistemas para a Internet - IFB '
-          style={[styles.defaultText, styles.description]}>
+        <Text accessibilityLabel='Graduando em Tecnologia em Sistemas para a Internet - IFB ' style={[styles.defaultText, styles.description]} >
           Graduando em Tecnologia em Sistemas para a Internet - IFB 🧑‍🎓
         </Text>
         <Pressable onPress={handlePressGoToGitHub}>
@@ -62,8 +63,9 @@ const styles = StyleSheet.create({
   },
 
   avatar: {
-    height: 250,
-    width: 250,
+    height: 200,
+    width: 200,
+    top: -20,
     borderRadius: 100,
     borderColor: 'white',
     borderWidth: 3,
@@ -81,6 +83,7 @@ const styles = StyleSheet.create({
   nickname: {
     fontSize: 18,
     color: colorDarkFontGitHub,
+    marginBottom:15,
   },
 
   description: {

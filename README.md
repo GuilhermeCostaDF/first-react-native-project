@@ -1,3 +1,5 @@
+![WhatsApp Image 2022-06-09 at 22.59.18](C:\Users\chile\Downloads\WhatsApp Image 2022-06-09 at 22.59.18.jpeg)
+
 # Conteúdo
 
 - Conhecendo o React Native

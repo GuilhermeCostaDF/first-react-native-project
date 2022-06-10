@@ -11,6 +11,8 @@ import {
 const colorGithub = '#010409';
 const colorFontGithug = '#C9D1D9';
 const colorDarkFontGitHub = '#4F565E';
+const darkGreenGitHub = '#114a30';
+const lightGreenGitHub = '#24d94a';
 const URL_GITHUB = 'https://github.com/GuilhermeCostaDF';
 const imageProfileGitHub = 'https://avatars.githubusercontent.com/u/74997292?v=4';
 
@@ -38,6 +40,72 @@ export default function App() {
         <Text accessibilityLabel='Graduando em Tecnologia em Sistemas para a Internet - IFB ' style={[styles.defaultText, styles.description]} >
           Graduando em Tecnologia em Sistemas para a Internet - IFB 🧑‍🎓
         </Text>
+        <View style={styles.actionsContainer}>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes, styles.grayBox]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.boxes]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.lightGreen]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+          <View style={[styles.boxes, styles.darkGrayBox]}></View>
+        </View>
         <Pressable onPress={handlePressGoToGitHub}>
           <View style={styles.button}>
             <Text style={[styles.defaultText, styles.textButton]}> Open in GitHub </Text>
@@ -102,4 +170,33 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
   },
+
+  actionsContainer: {
+    margin:20,
+    flexDirection: 'row',
+    width:250,
+    flexWrap:'wrap',
+  },
+
+  boxes: {
+    backgroundColor: darkGreenGitHub,
+    width:12,
+    height:12,
+    margin:1.4,
+  },
+
+  lightGreen: {
+    backgroundColor: lightGreenGitHub,
+    width:12,
+    height:12,
+    margin:1.4,
+  },
+
+  grayBox: {
+    backgroundColor:'#636363',
+  },
+
+  darkGrayBox: {
+    backgroundColor: '#272d34',
+  }
 });
